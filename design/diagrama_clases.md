@@ -53,5 +53,3 @@ classDiagram
     RegistroOperacion <|-- RegistroCosteoPlato
     RegistroOperacion <|-- RegistroAlertaPrecio
 ```
-
-La clase `AlmacenSQLite` no forma parte de las tres jerarquías de negocio exigidas; actúa como **capa de persistencia** entre objetos y SQLite.
