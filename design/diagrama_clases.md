@@ -52,16 +52,6 @@ classDiagram
     RegistroOperacion <|-- RegistroAltaIngrediente
     RegistroOperacion <|-- RegistroCosteoPlato
     RegistroOperacion <|-- RegistroAlertaPrecio
-
-    class AlmacenSQLite {
-        +conectar()
-        +inicializar_esquema()
-        +sembrar_datos_demo()
-        +CRUD platos/ingredientes/receta
-        +informe_costeo_platos() JOIN
-    }
-    AlmacenSQLite ..> Plato : persiste
-    AlmacenSQLite ..> Ingrediente : persiste
 ```
 
 La clase `AlmacenSQLite` no forma parte de las tres jerarquías de negocio exigidas; actúa como **capa de persistencia** entre objetos y SQLite.
